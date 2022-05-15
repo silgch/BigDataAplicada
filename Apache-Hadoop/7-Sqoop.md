@@ -30,7 +30,9 @@ verbose.
 `sqoop-list-tables --connect jdbc:postgresql://hadoop06.xxxx/curso --username xxxxx --password xxxxx`
 
 7. Con el comando eval, mostrar el registro correspondiente al ID 4 de la tabla empleados de PostgreSQL.  
-`sqoop-eval --connect jdbc:postgresql://hadoop06.xxxx/curso \. --username xxxxx --password xxxxx \ --query "SELECT * FROM EMPLEADOS WHERE ID = 4"`
+```
+sqoop-eval --connect jdbc:postgresql://hadoop06.xxxx/curso \. --username xxxxx --password xxxxx \ --query "SELECT * FROM EMPLEADOS WHERE ID = 4"
+```
 
 8. Crear un archivo con los datos de conexión para PostgreSQL y utilizarlo en algún comando.  
 `sqoop-eval --options-file ./option-file.txt \ --query "SELECT * FROM empleados WHERE ID = 4"`
